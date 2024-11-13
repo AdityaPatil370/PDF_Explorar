@@ -1,0 +1,18 @@
+#Create Conda or Python Environment
+conda create -n pdf_app_env python=3.9
+conda activate pdf_app_env
+
+#In conda environment install the required lib (use requirenments.txt provided)
+pip install -r requirements.txt
+
+----------------------OR-------------------------
+
+#use environment.yml to install and create in one go
+conda env create -f environment.yml
+
+
+------------------------------------------------------
+#To Remove  env
+conda deactivate
+conda remove --name ENV_NAME --all
+
